@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <groups>
+      <run>
+        <include name="SmokeSuite"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.vtiger.Altern.Organisation.TC_02_CreateOrganisationWithRatingDrpDn">
+        <methods>
+          <include name="CreateOrganisationWithRatingDrpDnTest"/>
+          <include name="CloseDB"/>
+          <include name="CloseBrowser"/>
+          <include name="LogoutApp"/>
+          <include name="connectDB"/>
+          <include name="Loginapp"/>
+          <include name="LaunchBrowser"/>
+        </methods>
+      </class> <!-- com.vtiger.Altern.Organisation.TC_02_CreateOrganisationWithRatingDrpDn -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

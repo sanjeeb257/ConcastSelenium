@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+<listeners>
+<listener class-name="com.vtiger.Altern.GenericUtilities.Listners"></listener> 
+</listeners>
+
+  <test thread-count="5" name="Test1">
+  <parameter name="browser" value= "chrome"/>
+    <classes>
+      <class name="com.vtiger.Altern.Organisation.TC_01_CreateOrganisationWithGroupBtn"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <listeners>
+<listener class-name="com.vtiger.Altern.GenericUtilities.Listners"></listener> 
+</listeners>
+  
+  <test thread-count="5" name="Test2">
+   <parameter name="browser" value= "firefox"/>
+    <classes>
+      <class name="com.vtiger.Altern.Organisation.TC_01_CreateOrganisationWithGroupBtn"/>
+    </classes>
+  </test> <!-- Test --> 
+  
+</suite> <!-- Suite -->
